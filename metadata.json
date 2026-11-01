@@ -1,0 +1,6 @@
+{
+  "name": "3D Anime Girl Virtual Assistant",
+  "description": "Interactive 3D anime virtual assistant with voice recognition, facial emotional states, local Sketchfab model loader, Windows system commands, and Spring Boot backend bridge.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
