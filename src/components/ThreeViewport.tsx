@@ -1082,14 +1082,14 @@ export const ThreeViewport: React.FC<ThreeViewportProps> = ({
       }
     });
 
-    const clock = new THREE.Clock();
+    const clock = new THREE.Timer();
     let frameId = 0;
 
     // Master Animation Loop
     const tick = () => {
       frameId = requestAnimationFrame(tick);
       const delta = Math.min(clock.getDelta(), 0.1);
-      const elapsed = clock.getElapsedTime();
+      const elapsed = clock.getElapsed();
 
       if (mixerRef.current) {
         mixerRef.current.update(delta);
